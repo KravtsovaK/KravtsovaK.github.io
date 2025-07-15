@@ -33,6 +33,7 @@ header a:hover {
   background: #d9e0dd;
   color: #000000;
   max-width: 100%;
+  height: 60%;
   padding: 15px;
   opacity: 0.8;
 }
@@ -40,6 +41,12 @@ header a:hover {
   width: 18rem;
   flex: 0 0 auto; /* Чтобы карточки не сжимались */
 }
+.card-img-top {
+  width: 100%;
+  height: 40%;
+}
+
+
 @media (max-width: 1200px) {
   .card{
     width: 20rem;
@@ -59,15 +66,33 @@ header a:hover {
   .card {
     width: 14rem;
   }
+  .card-img-top {
+    height: 30%;
+  }
+  .card-body {
+    height: 70%;
+  }
 }
 @media (max-width: 480px) {
   .card {
     width: 12rem !important;
   }
+  .card-img-top {
+    height: 25%;
+  }
+  .card-body {
+    height: 75%;
+  }
 }
 @media (max-width: 320px) {
   .card {
     width: 10rem !important;
+  }
+  .card-img-top {
+    height: 20%;
+  }
+  .card-body {
+    height: 80%;
   }
 }
 
