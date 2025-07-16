@@ -37,15 +37,28 @@ header a:hover {
   padding: 15px;
   opacity: 0.8;
 }
+
 .card {
+  
   width: 18rem;
   flex: 0 0 auto; /* Чтобы карточки не сжимались */
 }
+
 .card-img-top {
   width: 100%;
   height: 40%;
 }
 
+.card-text {
+  margin-bottom: 50px;
+}
+
+.card-button {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  right: 30px;
+}
 
 @media (max-width: 1200px) {
   .card{
@@ -426,5 +439,5 @@ h2 {
     list-style-type: none;
   }
 .list-group-item {
-  background-color:#f1f1f1f5; 
+  background-color: var(--main_white_bg_color);
 }
